@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Purple Glowy Text</title>
+  <style>
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .glow {
+      font-size: 4rem;
+      color: #e0b3ff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      text-shadow:
+        0 0 5px #d580ff,
+        0 0 10px #bf40ff,
+        0 0 20px #9900cc,
+        0 0 30px #cc66ff,
+        0 0 40px #cc66ff,
+        0 0 50px #bf40ff,
+        0 0 75px #9900cc;
+      animation: glowPulse 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowPulse {
+      from {
+        text-shadow:
+          0 0 5px #d580ff,
+          0 0 10px #bf40ff,
+          0 0 20px #9900cc,
+          0 0 30px #cc66ff,
+          0 0 40px #cc66ff,
+          0 0 50px #bf40ff,
+          0 0 75px #9900cc;
+      }
+      to {
+        text-shadow:
+          0 0 10px #e699ff,
+          0 0 20px #cc66ff,
+          0 0 30px #bf40ff,
+          0 0 40px #9900cc,
+          0 0 50px #9900cc,
+          0 0 60px #cc66ff,
+          0 0 100px #bf40ff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow">Purple Glow</div>
+</body>
+</html>

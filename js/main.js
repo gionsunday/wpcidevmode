@@ -87,12 +87,12 @@
   });
 
   const urls = [
-    "../img/bn3.jpg",
+    // "../img/bn3.jpg",
     "../img/hero-01.jpg",
 
-    "../img/bn2.jpeg",
-    "../img/bn3.jpg",
-    "../img/bn4.jpg",
+    // "../img/bn2.jpeg",
+    // "../img/bn3.jpg",
+    // "../img/bn4.jpg",
   ];
 
    $(".hero-sub-container").css({
