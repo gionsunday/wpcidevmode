@@ -235,10 +235,10 @@ a {
     color: #d63384;
     text-decoration: none
 }
-
+/* 
 a:hover {
     color: #034fc8
-}
+} */
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {

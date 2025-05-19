@@ -1097,6 +1097,18 @@ footer {
   font-size: 48px;
   text-shadow: 0 0 8px #FFD700, 0 0 16px #FFA500;
 }
-.a:hover{
+a:hover{
     color: black !important;
+}
+.links a{
+    text-decoration: none;
+}
+
+.item-container{
+    width: 400px;
+    height: 400px;
+}
+.item-container img{
+    width: 400px;
+    height: 400px;
 }
