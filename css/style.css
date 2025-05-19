@@ -1204,6 +1204,10 @@ a:hover {
     .partner img{
         width: 120px !important;
     }
+
+    .p-5 {
+    padding: 1rem !important;
+}
 }
 .partner img{
         width: 160px;
