@@ -88,7 +88,7 @@
 
   const urls = [
     // "../img/bn3.jpg",
-    "../img/hero-01.jpg",
+    "../img/bg3.png",
 
     // "../img/bn2.jpeg",
     // "../img/bn3.jpg",
