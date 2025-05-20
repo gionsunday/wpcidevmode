@@ -803,6 +803,8 @@ a {
     width: 100%;
     background-image: url('../img/hero-01.jpg');
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .be4about {

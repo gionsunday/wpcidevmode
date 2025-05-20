@@ -88,7 +88,7 @@
 
   const urls = [
     // "../img/bn3.jpg",
-    "../img/bg3.png",
+    "../img/hero-01.jpg",
 
     // "../img/bn2.jpeg",
     // "../img/bn3.jpg",
@@ -97,7 +97,7 @@
 
    $(".hero-sub-container").css({
     "background-image": `url(${urls[0]})`,
-    "background-size": "cover",
+    "background-size": "conver",
     "background-position": "center",
     "background-repeat": "no-repeat",
     "box-shadow": "inset 0px 25px 90px pink",
