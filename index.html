@@ -30,6 +30,12 @@
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+
+    <!-- Font Awesome 6 Free CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         crossorigin="anonymous">
     <!-- Libraries Stylesheet -->
@@ -110,21 +116,26 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="./" class="nav-item nav-link active">Home</a>
+                <a href="breastcancer" class="nav-item nav-link">Breast Cancer</a>
+                <a href="cervicalcancer" class="nav-item nav-link">Cervical Cancer</a>
+                <a href="support-services" class="nav-item nav-link">Support Services</a>
+
+                <!-- <a href="service" class="nav-item nav-link">Program Initiatives</a> -->
                 <a href="about" class="nav-item nav-link">About Us</a>
-                <a href="service" class="nav-item nav-link">Program Initiatives</a>
-                <div class="nav-item dropdown">
+                <!-- <a href="contact/" class="nav-item nav-link"></a> -->
+                <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="support-services" class="dropdown-item">Support Services</a>
+
                         <a href="testimonial" class="dropdown-item">Testimonial</a>
                         <a href="blog_news" class="dropdown-item">Blog & News</a>
                     </div>
 
 
-                </div>
+                </div> -->
             </div>
-            <a href="/contact" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Contact Us<i
-                    class="fa fa-arrow-right ms-3"></i></a>
+            <a href="/contact" class="btn-primary"
+                style="padding: 5px; text-decoration: none; border: 4px double pink;">Get Involved</a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -208,10 +219,52 @@
     </div>
     </div>
     <!-- Header End -->
+
+    <section>
+        <div class="text-center">
+            <h2 class="section-heading">WHAT WE DO</h2>
+            <p class="section-description">
+                WCPI is a nonprofit organization dedicated to reducing the burden of women's cancers in Nigeria.
+                Our work focuses on providing accessible cancer screenings, health education, scientific research, and
+                capacity building.
+            </p>
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+                <i class="fa-solid fa-users"></i>
+                <h3>7,000+ Women Reached</h3>
+                <p>Through community screening outreaches</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-truck-medical"></i>
+                <h3>2,800+ Women Screened</h3>
+                <p>Via our mobile mammography van</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h3>700+ Monthly Screenings</h3>
+                <p>Increased from under 200 monthly</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h3>6 States Reached</h3>
+                <p>With educational programs implemented</p>
+            </div>
+
+        </div>
+        <div style="width: 100%; display: flex; justify-content: center; padding-top: 20px;">
+            <a class="btn btn-primary rounded-pill py-3 px-5 mt-3 text-center" href="./about/">Learn More</a>
+        </div>
+    </section>
     <!-- About Start -->
 
 
-    <div class="be4about">
+    <!-- <div class="be4about">
         <div class="text-con">
             <div>
                 <h4>
@@ -251,11 +304,18 @@
 
 
         </div>
-    </div>
+    </div> -->
+
+
+    <!-- impact -->
+
+
+
+
 
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -283,22 +343,71 @@
                         access to accurate information on the prevention of the two most common cancers in women...
                     </p>
 
-                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="./about/">Read More</a>
+      
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- About End -->
 
+    <div class="wcpi-approach-con" style="background-color: var(--gray-50); width: 100%;">
+        <section class="wcpi-approach-section" >
 
+            <h2 class="wcpi-approach-title">Our Integrated Approach</h2>
+            <p class="wcpi-approach-description">
+                At WCPI, our work is built on four pillars that work together to reduce cancer-related deaths among
+                women in Nigeria—
+                research that informs, education that empowers, screening that detects early, and training that
+                strengthens the health system.
+            </p>
 
+            <div class="wcpi-approach-grid">
+
+                <div class="wcpi-approach-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Scientific Research</h3>
+                    <p>We lead community-based research to understand how women perceive cancer, access care, and
+                        respond to screening.</p>
+                    <a href="#">learn more →</a>
+                </div>
+
+                <div class="wcpi-approach-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Health Education</h3>
+                    <p>Most Nigerian women are aware of breast and cervical cancer, but only a few understand their risk
+                        or options.</p>
+                    <a href="#">learn more →</a>
+                </div>
+
+                <div class="wcpi-approach-card">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Cancer Screening</h3>
+                    <p>For too many Nigerian women, cancer screening is out of reach—blocked by high costs or poor
+                        infrastructure.</p>
+                    <a href="#">learn more →</a>
+                </div>
+
+                <div class="wcpi-approach-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Capacity Development</h3>
+                    <p>WCPI strengthens the health system by training professionals and empowering patients across
+                        Nigeria.</p>
+                    <a href="#">learn more →</a>
+                </div>
+
+            </div>
+
+            <a href="#" class="wcpi-approach-button">Learn More</a>
+
+        </section>
+    </div>
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5" style="background-color: var(--gray-50)">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <div class="text-center mx-auto mb-5 wow fadeInUp " data-wow-delay="0.1s" style="max-width: 100%;">
                 <h1>Our Intergrated Approach</h1>
-                <p class="d-inline-block  py-1 px-4">At WCPI, our work is built on four pillars that work together to
+                <p class="section-description">At WCPI, our work is built on four pillars that work together to
                     reduce cancer-related deaths among women in Nigeria—research that informs, education that empowers,
                     screening that detects early, and training that strengthens the health system.
                 </p>
@@ -364,10 +473,10 @@
                         </p>
 
                     </div>
-                </div>
+                </div> -->
 
 
-                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-light rounded h-100 p-5">
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
                             style="width: 65px; height: 65px;">
@@ -379,7 +488,7 @@
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                     </div>
                 </div> -->
-                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+    <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item bg-light rounded h-100 p-5">
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
                             style="width: 65px; height: 65px;">
@@ -391,7 +500,7 @@
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                     </div>
                 </div> -->
-                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+    <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item bg-light rounded h-100 p-5">
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
                             style="width: 65px; height: 65px;">
@@ -403,14 +512,14 @@
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                     </div>
                 </div> -->
-            </div>
+    <!-- </div>
 
         </div>
+        <div class="cation pt-5">
+            <a href="./service/"> <button class="learn-more">Learn More</button></a>
+        </div>
+    </div> -->
 
-    </div>
-    <div class="cation">
-        <a href="./service/"> <button class="learn-more">Learn More</button></a>
-    </div>
     <!-- Service End -->
 
     <!-- GALLERY Start -->
@@ -492,52 +601,53 @@
         </div>
         <!-- Gallery End -->
 
-        <div class="container pt-5 things">
-            <div class="section" style="max-width: 700px; text-align: center; margin: auto;">
-                <i class="fas fa-lightbulb shiny-bulb"
-                    style="font-size: 40px; border-radius: 50%; padding: 10px; color: ;"></i>
-                <h2 style="font-weight: 800;">
-                    THINGS TO KNOW
-                </h2>
+    <div class="wcpi-approach mt-5" style="background-color: var(--gray-50); width: 100%; ">
+
+        <section class="wcpi-know-section">
+            <i class="fas fa-lightbulb shiny-bulb"
+                style="font-size: 40px; border-radius: 50%; padding: 10px;"></i>
+            <h2 class="wcpi-know-title">THINGS TO KNOW</h2>
+
+            <div class="wcpi-know-grid">
+
+                <div class="wcpi-know-card">
+                    <i class="fas fa-ribbon"></i>
+                    <h3>Breast Cancer</h3>
+                    <p>
+                        Breast cancer is the most common cancer in Nigeria, accounting for around
+                        <span class="wcpi-highlight">38%</span> of female cancer cases.
+                        It is the leading cause of cancer-related deaths, with a mortality rate of about
+                        <span class="wcpi-highlight">25.5</span> per <span class="wcpi-highlight">100,000</span> women.
+                    </p>
+                </div>
+
+                <div class="wcpi-know-card">
+                    <i class="fas fa-female"></i>
+                    <h3>Cervical Cancer</h3>
+                    <p>
+                        Cervical cancer is the second most common cancer among women in Nigeria aged
+                        <span class="wcpi-highlight">15–40</span>. In
+                        <span class="wcpi-highlight">2020</span>, it accounted for more than
+                        <span class="wcpi-highlight">16%</span> of female cancer cases.
+                    </p>
+                </div>
+
+                <div class="wcpi-know-card">
+                    <i class="fas fa-virus"></i>
+                    <h3>Human Papillomavirus</h3>
+                    <p>
+                        HPV is the leading cause of cervical cancer among Nigerian women. Over
+                        <span class="wcpi-highlight">3%</span> of the female population is infected with
+                        <span class="wcpi-highlight">HPV-16</span> and <span class="wcpi-highlight">HPV-18</span>,
+                        which are deadly strains. While there is no cure, vaccination can prevent infection.
+                    </p>
+                </div>
 
             </div>
+        </section>
+    </div>
 
-            <div class="links" style="">
-                <a href="#" class="link-box" style="flex: 1 1 200px;">
-                    <span>Breast Cancer
-
-                    </span>
-                    <p class="p-2 " style="text-align: justify;">
-                        Breast cancer is the most common cancer in Nigeria, accounting for around 38% of female cancer
-                        cases. It is the leading cause of cancer-related deaths, with a mortality rate of about 25.5 per
-                        100,000 women.</p>
-                </a>
-
-                <a href="#" class="link-box" style="flex: 1 1 200px;">
-                    <span> Cervical Cancer</span>
-                    <p class="p-2 " style="text-align: justify;">
-                        Cervical cancer is the second most common cancer among women in Nigeria aged 15 and 40. In 2020,
-                        it
-                        accounted for more than 16% of female cancer cases.
-
-
-                    </p>
-                </a>
-                <a href="#" class="link-box" style="flex: 1 1 200px;">
-                    <span>Human Papillomavirus </span>
-                    <p class="p-2 " style="text-align: justify;">Leading cause of cervical cancer among women in
-                        Nigeria.
-                        Currently, over 3% of the country’s female population is infected with HPV-16 and 18, which are
-                        deadly strains of the virus. There is no known treatment for HPV, however, this infection can be
-                        prevented by vaccination.
-
-                    </p>
-                </a>
-
-
-
-            </div>
-        </div>
+       
         <style>
             .item-container {
                 width: 550px;
@@ -1007,6 +1117,7 @@
             </div>
         </div>
         <!-- Footer End -->
+
 
 
         <!-- Back to Top -->

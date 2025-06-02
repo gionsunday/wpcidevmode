@@ -1,162 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Support | WCPI</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Things to Know - WCPI</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <style>
+    :root {
+      --wcpi-color-pink: #db2777;
+      --wcpi-color-gray: #374151;
+      --wcpi-color-bg: #f9fafb;
+    }
+
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #fff;
-      color: #333;
+      background-color: var(--wcpi-color-bg);
     }
 
-    header {
-      background: linear-gradient(to right, #ff9ff3, #c56cf0);
-      color: white;
+    .wcpi-know-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 70px 20px;
       text-align: center;
-      padding: 3rem 1rem;
+      color: var(--wcpi-color-gray);
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-
-    .section {
-      margin-bottom: 2rem;
-    }
-
-    .section h2 {
-      color: #c56cf0;
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .section p {
-      line-height: 1.7;
-      color: #555;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .link-box {
-      flex: 1 1 220px;
-      border: 1px solid #f2f2f2;
-      border-radius: 10px;
-      text-align: center;
-      padding: 1.5rem 1rem;
-      background: #fff0fb;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .link-box:hover {
-      box-shadow: 0 4px 10px rgba(197, 108, 240, 0.2);
-      transform: translateY(-3px);
-    }
-
-    .link-box i {
-      font-size: 2rem;
-      color: #c56cf0;
-      margin-bottom: 0.5rem;
-    }
-
-    .link-box span {
-      display: block;
-      margin-top: 0.5rem;
+    .wcpi-know-title {
+      font-size: 2.75rem;
+      color: var(--wcpi-color-pink);
       font-weight: bold;
+      margin-bottom: 50px;
     }
 
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #aaa;
-      font-size: 0.9rem;
-      border-top: 1px solid #eee;
-      margin-top: 3rem;
+    .wcpi-know-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
     }
 
-    @media (max-width: 600px) {
-      .link-box {
-        flex: 1 1 100%;
+    @media (min-width: 768px) {
+      .wcpi-know-grid {
+        grid-template-columns: repeat(3, 1fr);
       }
+    }
+
+    .wcpi-know-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 35px 25px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .wcpi-know-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .wcpi-know-card i {
+      font-size: 48px;
+      color: var(--wcpi-color-pink);
+      margin-bottom: 18px;
+    }
+
+    .wcpi-know-card h3 {
+      font-size: 1.75rem;
+      color: var(--wcpi-color-pink);
+      margin-bottom: 16px;
+    }
+
+    .wcpi-know-card p {
+      font-size: 1.125rem;
+      color: var(--wcpi-color-gray);
+      line-height: 1.7;
+    }
+
+    .wcpi-highlight {
+      color: var(--wcpi-color-pink);
+      font-weight: bold;
     }
   </style>
 </head>
-
 <body>
 
-  <header>
-    <h1>Empowering Nigerian Women to Lead Cancer-Free Lives</h1>
-    <p>Through prevention, early detection, education, and support</p>
-  </header>
+  <section class="wcpi-know-section">
+    <h2 class="wcpi-know-title">THINGS TO KNOW</h2>
 
-  <div class="container">
-    <div class="section">
-      <p>
-        The Women Cancer Prevention Initiative (WCPI) is a non-profit organization dedicated to the early detection
-        and prevention of breast and cervical cancer among women in Nigeria. We dream of a world where Nigerian women,
-        regardless of age and status, lead beautiful lives free of the burdens of cancer and its consequences.
-      </p>
-      <p>
-        We believe this is possible through early prevention, diagnosis, education, and awareness. Explore the key areas
-        of our work below:
-      </p>
+    <div class="wcpi-know-grid">
+
+      <div class="wcpi-know-card">
+        <i class="fas fa-ribbon"></i>
+        <h3>Breast Cancer</h3>
+        <p>
+          Breast cancer is the most common cancer in Nigeria, accounting for around
+          <span class="wcpi-highlight">38%</span> of female cancer cases.
+          It is the leading cause of cancer-related deaths, with a mortality rate of about
+          <span class="wcpi-highlight">25.5</span> per <span class="wcpi-highlight">100,000</span> women.
+        </p>
+      </div>
+
+      <div class="wcpi-know-card">
+        <i class="fas fa-female"></i>
+        <h3>Cervical Cancer</h3>
+        <p>
+          Cervical cancer is the second most common cancer among women in Nigeria aged
+          <span class="wcpi-highlight">15–40</span>. In
+          <span class="wcpi-highlight">2020</span>, it accounted for more than
+          <span class="wcpi-highlight">16%</span> of female cancer cases.
+        </p>
+      </div>
+
+      <div class="wcpi-know-card">
+        <i class="fas fa-virus"></i>
+        <h3>Human Papillomavirus</h3>
+        <p>
+          HPV is the leading cause of cervical cancer among Nigerian women. Over
+          <span class="wcpi-highlight">3%</span> of the female population is infected with
+          <span class="wcpi-highlight">HPV-16</span> and <span class="wcpi-highlight">HPV-18</span>,
+          which are deadly strains. While there is no cure, vaccination can prevent infection.
+        </p>
+      </div>
+
     </div>
-
-    <div class="links">
-      <a href="partnership.html" class="link-box">
-        <i class="fa-solid fa-handshake-angle"></i>
-        <span>Partnership</span>
-      </a>
-
-      <a href="screening.html" class="link-box">
-        <i class="fa-solid fa-stethoscope"></i>
-        <span>Screening</span>
-      </a>
-
-      <a href="education.html" class="link-box">
-        <i class="fa-solid fa-chalkboard-user"></i>
-        <span>Education</span>
-      </a>
-
-      <a href="research.html" class="link-box">
-        <i class="fa-solid fa-microscope"></i>
-        <span>Research</span>
-      </a>
-
-      <a href="contact.html" class="link-box">
-        <i class="fa-solid fa-heart"></i>
-        <span>Support Us</span>
-      </a>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Women Cancer Prevention Initiative (WCPI). All rights reserved.
-  </footer>
+  </section>
 
 </body>
-
 </html>

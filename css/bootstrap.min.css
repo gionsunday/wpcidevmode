@@ -206,7 +206,7 @@ strong {
 
 small,
 .small {
-    font-size: .875em
+    font-size: .75em
 }
 
 mark,
@@ -639,8 +639,8 @@ progress {
 .container-xl,
 .container-xxl {
     width: 100%;
-    padding-right: var(--bs-gutter-x, .75rem);
-    padding-left: var(--bs-gutter-x, .75rem);
+    /* padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem); */
     margin-right: auto;
     margin-left: auto
 }

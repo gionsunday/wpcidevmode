@@ -1,95 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Newsletter Signup Popup</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Integrated Approach - WCPI</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <style>
+    :root {
+      --wcpi-pink: #db2777;
+      --wcpi-gray-700: #374151;
+      --wcpi-gray-600: #4b5563;
+      --wcpi-bg: #f9fafb;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: var(--wcpi-bg);
     }
 
-    .popup-container {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 300px;
-      background-color: #fff;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-      border-radius: 12px;
-      padding: 20px;
-      display: none;
-      z-index: 9999;
-      animation: fadeIn 0.5s ease-in-out;
+    .wcpi-approach-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--wcpi-gray-700);
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .wcpi-approach-title {
+      font-size: 2.5rem;
+      color: var(--wcpi-pink);
+      font-weight: bold;
+      margin-bottom: 24px;
     }
 
-    .popup-container h3 {
-      margin-top: 0;
-      color: #333;
+    .wcpi-approach-description {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 50px;
+      color: var(--wcpi-gray-600);
+      line-height: 1.6;
     }
 
-    .popup-container input[type="email"] {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-bottom: 10px;
+    .wcpi-approach-grid {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 1fr;
     }
 
-    .popup-container button {
-      width: 100%;
-      padding: 10px;
-      background-color: #e75c9d;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
+    @media (min-width: 768px) {
+      .wcpi-approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .wcpi-approach-card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .wcpi-approach-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .wcpi-approach-card i {
+      font-size: 40px;
+      color: var(--wcpi-pink);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .wcpi-approach-card h3 {
+      font-size: 1.375rem;
+      color: var(--wcpi-pink);
+      margin-bottom: 12px;
+    }
+
+    .wcpi-approach-card p {
+      font-size: 1rem;
+      color: var(--wcpi-gray-600);
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .wcpi-approach-card a {
+      font-size: 1rem;
+      color: var(--wcpi-pink);
+      text-decoration: none;
       font-weight: bold;
     }
 
-    .popup-container .close-btn {
-      position: absolute;
-      top: 8px;
-      right: 12px;
-      font-size: 16px;
-      background: none;
-      border: none;
-      color: #888;
-      cursor: pointer;
+    .wcpi-approach-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 24px;
+      background-color: var(--wcpi-pink);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background 0.3s ease;
     }
 
-    .popup-container .close-btn:hover {
-      color: #333;
+    .wcpi-approach-button:hover {
+      background-color: #be185d;
     }
   </style>
 </head>
 <body>
 
-  <!-- Newsletter Popup -->
-  <div class="popup-container" id="newsletterPopup">
-    <button class="close-btn" onclick="closePopup()">×</button>
-    <h3>Join Our Newsletter</h3>
-    <p>Get updates, deals, and exclusive tips right to your inbox.</p>
-    <input type="email" placeholder="Enter your email" />
-    <button>Subscribe</button>
-  </div>
+  <section class="wcpi-approach-section">
+    <h2 class="wcpi-approach-title">Our Integrated Approach</h2>
+    <p class="wcpi-approach-description">
+      At WCPI, our work is built on four pillars that work together to reduce cancer-related deaths among women in Nigeria—
+      research that informs, education that empowers, screening that detects early, and training that strengthens the health system.
+    </p>
 
-  <script>
-    // Show popup after 45 seconds (45,000 ms)
-    setTimeout(() => {
-      document.getElementById("newsletterPopup").style.display = "block";
-    }, 4000);
+    <div class="wcpi-approach-grid">
 
-    function closePopup() {
-      document.getElementById("newsletterPopup").style.display = "none";
-    }
-  </script>
+      <div class="wcpi-approach-card">
+        <i class="fas fa-flask"></i>
+        <h3>Scientific Research</h3>
+        <p>We lead community-based research to understand how women perceive cancer, access care, and respond to screening.</p>
+        <a href="#">learn more →</a>
+      </div>
+
+      <div class="wcpi-approach-card">
+        <i class="fas fa-book-open"></i>
+        <h3>Health Education</h3>
+        <p>Most Nigerian women are aware of breast and cervical cancer, but only a few understand their risk or options.</p>
+        <a href="#">learn more →</a>
+      </div>
+
+      <div class="wcpi-approach-card">
+        <i class="fas fa-stethoscope"></i>
+        <h3>Cancer Screening</h3>
+        <p>For too many Nigerian women, cancer screening is out of reach—blocked by high costs or poor infrastructure.</p>
+        <a href="#">learn more →</a>
+      </div>
+
+      <div class="wcpi-approach-card">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Capacity Development</h3>
+        <p>WCPI strengthens the health system by training professionals and empowering patients across Nigeria.</p>
+        <a href="#">learn more →</a>
+      </div>
+
+    </div>
+
+    <a href="#" class="wcpi-approach-button">Learn More</a>
+  </section>
 
 </body>
 </html>
