@@ -90,7 +90,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
-        <a href="../index" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="../" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h1 class="m-0 text-primary">
                 <img src="../img/icons/logo.png" style="width: 60px; " alt="logo" srcset="">
                 <small> WCPInitiative</small>
@@ -102,22 +102,27 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="../index.html" class="nav-item nav-link ">Home</a>
+                <a href="../" class="nav-item nav-link ">Home</a>
+                <a href="../breastcancer" class="nav-item nav-link">Breast Cancer</a>
+                <a href="../cervicalcancer" class="nav-item nav-link">Cervical Cancer</a>
+                <a href="../support-services" class="nav-item nav-link">Support Services</a>
+
+                <!-- <a href="service" class="nav-item nav-link">Program Initiatives</a> -->
                 <a href="./" class="nav-item nav-link active">About Us</a>
-                <a href="../service" class="nav-item nav-link">Program Initiatives</a>
-                <div class="nav-item dropdown">
+                <!-- <a href="contact/" class="nav-item nav-link"></a> -->
+                <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="../support-services" class="dropdown-item">Support Services</a>
-                        <a href="../testimonial" class="dropdown-item">Testimonial</a>
-                        <a href="../blog_news" class="dropdown-item">Blog & News</a>
+
+                        <a href="testimonial" class="dropdown-item">Testimonial</a>
+                        <a href="blog_news" class="dropdown-item">Blog & News</a>
                     </div>
 
 
-                </div>
+                </div> -->
             </div>
-            <a href="../contact" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Contact Us<i
-                    class="fa fa-arrow-right ms-3"></i></a>
+            <a href="../contact" class="btn-primary"
+                style="padding: 5px; text-decoration: none; border: 4px double pink;">Get Involved</a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -132,16 +137,26 @@
     <!--</div>-->
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-headerr py-5 mb-5 wow fadeIn about-banner" data-wow-delay="0.1s">
-        <div class="container py-5 w-50 fourcon">
+    <div class="container-fluid page-headerr py-5 mb-5 wow fadeIn about-banner" data-wow-delay="0.1s" style="background-image: url(../img/bg/bg1.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        ">
+        <div class="container py-5 w-50 ">
             <h1 class="display-3 text-white mb-3 animated slideInDown text-center" id="about">About Us</h1>
             <nav aria-label="breadcrumb animated slideInDown" class="text-white"
                 style="text-align: center;font-weight: 700;">
 
-                Women Cancer Prevention Initiative (WCPI) is an initiative that is known for its projects dedicated to
-                reducing the prevalence of cancers among women in underserved populations. We are a non-profit
-                organization dedicated to the early detection and prevention of breast and cervical cancer among women
-                in Nigeria.
+                <p>
+                    <strong id="ss">
+                        Women Cancer Prevention Initiative (WCPI) is an initiative that is known for its projects
+                        dedicated to
+                        reducing the prevalence of cancers among women in underserved populations. We are a non-profit
+                        organization dedicated to the early detection and prevention of breast and cervical cancer among
+                        women
+                        in Nigeria.
+                    </strong>
+                </p>
             </nav>
             <h4 style="font-size: 40px; color: purple;" class="text-center text-white">↓</h4>
         </div>
@@ -155,9 +170,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="../img/bg1.png" alt="">
-                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="../img/hero-01.jpg" alt=""
-                            style="margin-top: -25%;">
+                        <img class="img-fluid rounded w-80 align-self-end" src="../img/3.jpg" alt="">
+
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -168,15 +182,13 @@
                         Africa.
                     </p>
                     <p>
-                        Our goals are aligned with the United Nations Sustainable Development Goal 3, which aims to
-                        reduce premature mortality from noncommunicable diseases through prevention and treatment. Our
-                        initiative ensures that women around the world, especially in Nigeria and its environs, have
-                        access to accurate information on the prevention of the two most common cancers in women. Over
-                        the years, we have held several impactful outreaches across Nigeria, intending to reach all six
+                        Over the years, we have held several impactful outreaches across Nigeria, intending to reach all
+                        six
                         geopolitical zones. These outreaches involve accessible screening, training
                         of local health workers, collaboration with regional health organizations, and advocacy for
                         vaccination against the deadly Human Papillomavirus (HPV). We have successfully reached and
-                        screened over 7000 women through these programs.
+                        screened over <strong style="color:#db2777; font-size: 20px;">7000 women</strong> through these
+                        programs.
 
                     </p>
 
@@ -188,7 +200,33 @@
     </div>
     <!-- About End -->
 
+    <section class="wcpi-mission-vision-section">
+        <div class="wcpi-mv-grid">
 
+            <div class="wcpi-mv-card">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <h3>OUR MISSION</h3>
+                <p>
+                    The Women Cancer Prevention Initiative is committed to reducing cancer-related deaths among women
+                    through early diagnosis of breast and cervical cancer. We establish stable partnerships with
+                    government agencies, community groups, and various health organizations to empower women of all
+                    ages in the fight against the two most common cancers in Nigeria.
+                </p>
+            </div>
+
+            <div class="wcpi-mv-card">
+                <i class="fa-solid fa-eye"></i>
+                <h3>OUR VISION</h3>
+                <p>
+                    At Women Cancer Prevention Initiative, we dream of a world where women, regardless of age and
+                    status, lead beautiful lives free of the burdens of cancer and its consequences. We are focused on
+                    increasing awareness of breast and cervical cancer among women, as well as providing avenues for
+                    early detection and diagnosis.
+                </p>
+            </div>
+
+        </div>
+    </section>
     <!-- Feature Start -->
     <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
         <div class="container feature px-lg-0">
@@ -199,9 +237,7 @@
                         <p class="text-white mb-4 pb-2" style="text-align: justify;">
                             At WCPI, our core activities include health education, cancer screening, and scientific
                             research.
-                            Our team of qualified health professionals is committed to providing accurate information
-                            and
-                            excellent screening services to women in all parts of Nigeria. Through these efforts, we
+                            Through these efforts, we
                             raise
                             awareness, promote prevention, achieve early detection, and eventually, reduce
                             cancer-related
@@ -283,7 +319,7 @@
 
 
     <!-- Feature Start -->
-    <div class="container-fluid  overflow-hidden my-5 px-lg-0" style="background-color: purple !important;">
+    <!-- <div class="container-fluid  overflow-hidden my-5 px-lg-0" style="background-color: purple !important;">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
 
@@ -322,7 +358,7 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="container-xxl py-5">
@@ -331,8 +367,7 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" id="reducer">
                     <div class="d-flex flex-column">
                         <img class="img-fluid rounded w-75 align-self-end" src="../img/profiles/founder.jpg" alt="">
-                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="../img/profiles/founder-1.jpg"
-                            alt="" style="margin-top: -25%;">
+
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" id="increaseer">
@@ -608,27 +643,93 @@
 
         </div>
     </div> -->
+    <div class="wcpi-partners" style="background-color: var(--gray-50);">
+        <section class="wcpi-carousel-section">
+            <h2>Our Partners</h2>
+            <p class="section-description">
+                Over the years, WCPI has built strong partnerships with government agencies, healthcare providers, and
+                organizations
+                that share our mission of reducing the burden of cancer on women. These collaborations have been
+                instrumental in
+                our outreach efforts, expanding our reach, and making a tangible difference in the lives of many
+                Nigerian women.
+            </p>
+            <div class="image-grid">
+                <div class="image-grid-item"><img src="../img/partners/nicract.png" alt="Image 1" /></div>
+                <div class="image-grid-item"><img src="../img/partners/chai.png" alt="Image 2" /></div>
+                <div class="image-grid-item"><img src="../img/partners/lamh.png" alt="Image 3" /></div>
+                <div class="image-grid-item"><img src="../img/partners/luth.png" alt="Image 4" /></div>
+                <div class="image-grid-item"><img src="../img/partners/bis.png" alt="Image 5" /></div>
+                <!-- Add more items as needed -->
+            </div>
+
+        </section>
+    </div>
+
+
+
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .image-grid-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            /* maintains square shape */
+        }
+
+        .image-grid-item img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        /* Responsive fallback */
+        @media (max-width: 1024px) {
+            .image-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
 
     <!-- Feature Start -->
-    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0" style="background-color: purple !important;">
+    <!-- <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0" style="background-color: purple !important;">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
 
                 <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s"
                     style=" background-color: purple !important;">
                     <div class="p-lg-5 ps-lg-0">
-                        <!-- <p class="d-inline-block border rounded-pill text-light py-1 px-4"></p> -->
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4"></p> 
                         <h1 class="text-white mb-4">WCPI</h1>
                         <p class="text-white mb-4 pb-2" style="text-align: justify;">
                             Over the years, WCPI has built strong partnerships with government agencies, healthcare
                             providers, and organizations that share our mission of reducing the burden of cancer on
                             women. These collaborations have been instrumental in our outreach efforts, expanding our
                             reach, and making a tangible difference in the lives of many Nigerian women. </p>
-                        <!-- <p class="text-white mb-4 pb-2" style="text-align: justify;">
+                         <p class="text-white mb-4 pb-2" style="text-align: justify;">
                             Cancer accounts for an increasing proportion of non-communicable diseases (“NCDs”) in the
                             world, and underserved populations in countries like Nigeria where death rates for female
                             breast and cervical cancers are the highest, are disproportionately burdened from these
-                            diseases. </p> -->
+                            diseases. </p> 
 
 
                     </div>
@@ -652,7 +753,7 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Footer Start -->
@@ -748,6 +849,27 @@
                 btn.innerHTML = "Play";
             }
         }
+    </script>
+
+    <script>
+        const carousel = document.getElementById('wcpi-carousel');
+        const totalItems = carousel.children.length;
+        const visibleItems = 5;
+        const itemWidth = 200; // px
+        const gap = 20;        // px
+
+        let index = 0;
+
+        function slide() {
+            index++;
+            if (index > totalItems - visibleItems) {
+                index = 0;
+            }
+            const shift = index * (itemWidth + gap);
+            carousel.style.transform = `translateX(-${shift}px)`;
+        }
+
+        setInterval(slide, 1000);
     </script>
 
     <!-- JavaScript Libraries -->
