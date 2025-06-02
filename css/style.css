@@ -1909,7 +1909,7 @@ p.d-inline-block{
       }
 
       .wcpi-contact-form .name-email-row input {
-        flex: 1 1 100%;
+        flex: 1 1 0%;
       }
     }
 
