@@ -1,59 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Purple Glowy Text</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Impact by the Numbers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
-      background-color: #000;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .impact-wrapper {
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+      align-items: flex-start;
+      padding: 60px 20px;
     }
 
-    .glow {
-      font-size: 4rem;
-      color: #e0b3ff;
-      font-family: 'Segoe UI', sans-serif;
+    .impact-section {
+      width: 50%;
+      max-width: 600px;
+    }
+
+    .impact-section h2 {
       text-align: center;
-      text-shadow:
-        0 0 5px #d580ff,
-        0 0 10px #bf40ff,
-        0 0 20px #9900cc,
-        0 0 30px #cc66ff,
-        0 0 40px #cc66ff,
-        0 0 50px #bf40ff,
-        0 0 75px #9900cc;
-      animation: glowPulse 2s ease-in-out infinite alternate;
+      font-size: 2.5rem;
+      color: #c2185b;
+      margin-bottom: 20px;
     }
 
-    @keyframes glowPulse {
-      from {
-        text-shadow:
-          0 0 5px #d580ff,
-          0 0 10px #bf40ff,
-          0 0 20px #9900cc,
-          0 0 30px #cc66ff,
-          0 0 40px #cc66ff,
-          0 0 50px #bf40ff,
-          0 0 75px #9900cc;
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .impact-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px 25px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .impact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .impact-icon {
+      font-size: 2.5rem;
+      color: #c2185b;
+      margin-bottom: 15px;
+    }
+
+    .impact-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #111;
+    }
+
+    .impact-description {
+      font-size: 1rem;
+      color: #555;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .impact-wrapper {
+        flex-direction: column;
+        align-items: center;
       }
-      to {
-        text-shadow:
-          0 0 10px #e699ff,
-          0 0 20px #cc66ff,
-          0 0 30px #bf40ff,
-          0 0 40px #9900cc,
-          0 0 50px #9900cc,
-          0 0 60px #cc66ff,
-          0 0 100px #bf40ff;
+
+      .impact-section {
+        width: 100%;
+      }
+
+      .impact-section h2 {
+        font-size: 2rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="glow">Purple Glow</div>
+
+  <div class="impact-wrapper">
+    <section class="impact-section">
+      <h2>Impact by the Numbers</h2>
+      <div class="impact-grid">
+
+        <div class="impact-card">
+          <div class="impact-icon"><i class="fas fa-users"></i></div>
+          <div class="impact-number">7,000+</div>
+          <div class="impact-description">
+            Women reached through national outreach events—urban and rural communities alike.
+          </div>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-icon"><i class="fas fa-file-medical-alt"></i></div>
+          <div class="impact-number">3,776</div>
+          <div class="impact-description">
+            Participants enrolled in our pilot study (concluded Dec 2024), forming the roll-out base.
+          </div>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-icon"><i class="fas fa-truck-medical"></i></div>
+          <div class="impact-number">2,836</div>
+          <div class="impact-description">
+            Screenings completed via our custom mobile mammography unit—zero appointment hassles.
+          </div>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-icon"><i class="fas fa-calendar-check"></i></div>
+          <div class="impact-number">~700/month</div>
+          <div class="impact-description">
+            Consistent screening rate since May 2024—showing strong demand and community trust.
+          </div>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-icon"><i class="fas fa-hands-helping"></i></div>
+          <div class="impact-number">3,000+</div>
+          <div class="impact-description">
+            Women provided with follow-up consultations, nutritional support, and medical referrals.
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
 </body>
 </html>

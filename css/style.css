@@ -111,7 +111,7 @@
 
 :root {
     /* --primary: #0463FA; */
-    --primary: #d63384 !important;
+    --primary: #db2777 !important;
     --light: #EFF5FF;
     --dark: #1B2C51;
 }
@@ -733,7 +733,7 @@ body{
     }
 
     50% {
-        color: #d63384;
+        color: #db2777;
     }
 
     100% {
@@ -742,12 +742,12 @@ body{
 }
 
 #feature-icons {
-    color: #d63384;
+    color: #db2777;
     font-size: 30px;
 }
 
 #feature-icons-blue {
-    color: #d63384;
+    color: #db2777;
     font-size: 30px;
 }
 
@@ -763,7 +763,7 @@ a {
     border: none !important;
 } */
 .bg-dark {
-    background-color: #d63384 !important;
+    background-color: #db2777 !important;
 }
 
 #thisbtn {
@@ -780,7 +780,7 @@ a {
 
     50% {
 
-        background-color: #d63384;
+        background-color: #db2777;
         /* color: crimson; */
         transform: scale(1.5);
         border: 5px solid #1B2C51;
@@ -843,7 +843,7 @@ a {
 }
 
 .header h2 span {
-    color: #d63384;
+    color: #db2777;
 }
 
 .header h2 {
@@ -926,7 +926,7 @@ a {
 
 #impact-icon {
     font-size: 20px;
-    color: #d63384;
+    color: #db2777;
 }
 
 .donate-btn {
@@ -964,7 +964,7 @@ a {
 
 .section h2 {
     color: #c56cf0;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-bottom: 0.5rem;
 }
 
@@ -1034,7 +1034,7 @@ footer {
 .section-container {
     align-items: center;
     display: flex;
-    padding: 20px;
+    padding: 50px;
     justify-content: space-between;
 }
 
@@ -1277,7 +1277,7 @@ a:hover {
 }
 
 .things {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .screen {
@@ -1340,7 +1340,7 @@ a:hover {
 }
 
 section {
-    max-width: 72rem;
+    /* max-width: 72rem; */
     /* max-w-6xl = 1152px */
     margin: 0 auto;
     padding: 4rem 1.5rem;
@@ -1700,9 +1700,7 @@ p.d-inline-block{
     .wcpi-carousel-wrapper {
       width: 100%;
       overflow: hidden;
-      border: 1px solid #ddd;
       border-radius: 10px;
-      background: white;
       padding: 10px 0;
     }
 
@@ -1916,4 +1914,260 @@ p.d-inline-block{
     .wcpi-map,
     .wcpi-contact-form {
       min-height: 100%;
+    }
+
+
+       .impact-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 20px;
+    }
+
+    .impact-section {
+      width: 50%;
+      max-width: 600px;
+    }
+
+    .impact-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #c2185b;
+      margin-bottom: 20px;
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .impact-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px 25px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .impact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .impact-icon {
+      font-size: 2.5rem;
+      color: #c2185b;
+      margin-bottom: 15px;
+    }
+
+    .impact-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #111;
+    }
+
+    .impact-description {
+      font-size: 1rem;
+      color: #555;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .impact-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .impact-section {
+        width: 100%;
+      }
+
+      .impact-section h2 {
+        font-size: 2rem;
+      }
+    }
+
+
+     .infographic-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 20px;
+    }
+
+    .infographic-wrapper {
+      width: 100%;
+      max-width: 90%;
+    }
+
+    .infographic-wrapper h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #c2185b;
+      margin-bottom: 30px;
+    }
+
+    .infographic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      gap: 30px;
+    }
+
+    @media screen and (max-width:990px) {
+           .infographic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+
+    }
+
+    .infographic-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .infographic-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .infographic-icon {
+      font-size: 2.5rem;
+      color: #c2185b;
+      margin-bottom: 15px;
+    }
+
+    .infographic-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #f8e1eb;
+      color: #c2185b;
+      font-weight: bold;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px auto;
+    }
+
+    .infographic-text {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .infographic-wrapper {
+        width: 100%;
+        padding: 0 10px;
+      }
+
+      .infographic-wrapper h2 {
+        font-size: 2rem;
+      }
+    }
+
+       .initiatives-container {
+      max-width: 85%;
+      margin: auto;
+    }
+    .initiatives-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #c2185b;
+      margin-bottom: 40px;
+    }
+    .initiative-card {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .initiative-icon {
+      flex-shrink: 0;
+      font-size: 2.5rem;
+      color: #c2185b;
+      margin-top: 5px;
+    }
+    .initiative-content h3 {
+      margin: 0;
+      font-size: 1.75rem;
+      color: #c2185b;
+    }
+    .initiative-content p {
+      margin-top: 10px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+      .initiative-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    
+
+     .wcpi-carousel-wrapper {
+      overflow: hidden;
+      width: 90%;
+      padding: 40px 0;
+    }
+
+    .wcpi-carousel-track {
+      display: flex;
+      gap: 40px;
+      width: max-content;
+      animation: wcpi-carousel-scroll 25s linear infinite;
+    }
+
+    .wcpi-carousel-item {
+      flex: 0 0 auto;
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wcpi-carousel-item img {
+      width: 90%;
+      height: 90%;
+      object-fit: contain;
+    }
+
+    .wcpi-carousel-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @keyframes wcpi-carousel-scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Responsive: Pause scroll on hover */
+    .wcpi-carousel-wrapper:hover .wcpi-carousel-track {
+      animation-play-state: paused;
     }

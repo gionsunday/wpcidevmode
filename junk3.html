@@ -1,163 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Integrated Approach - WCPI</title>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WCPI Program Initiatives</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    :root {
-      --wcpi-pink: #db2777;
-      --wcpi-gray-700: #374151;
-      --wcpi-gray-600: #4b5563;
-      --wcpi-bg: #f9fafb;
-    }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: var(--wcpi-bg);
+      padding: 40px 20px;
+      background: #f5f5f5;
+      color: #333;
     }
-
-    .wcpi-approach-section {
+    .initiatives-container {
       max-width: 1200px;
-      margin: 0 auto;
-      padding: 60px 20px;
+      margin: auto;
+    }
+    .initiatives-title {
       text-align: center;
-      color: var(--wcpi-gray-700);
-    }
-
-    .wcpi-approach-title {
       font-size: 2.5rem;
-      color: var(--wcpi-pink);
-      font-weight: bold;
-      margin-bottom: 24px;
+      color: #c2185b;
+      margin-bottom: 40px;
     }
-
-    .wcpi-approach-description {
-      font-size: 1.25rem;
-      max-width: 700px;
-      margin: 0 auto 50px;
-      color: var(--wcpi-gray-600);
-      line-height: 1.6;
-    }
-
-    .wcpi-approach-grid {
-      display: grid;
-      gap: 30px;
-      grid-template-columns: 1fr;
-    }
-
-    @media (min-width: 768px) {
-      .wcpi-approach-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    .wcpi-approach-card {
+    .initiative-card {
       background: white;
-      padding: 30px 20px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-      text-align: left;
-      transition: transform 0.3s ease;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
     }
-
-    .wcpi-approach-card:hover {
-      transform: translateY(-5px);
+    .initiative-icon {
+      flex-shrink: 0;
+      font-size: 2.5rem;
+      color: #c2185b;
+      margin-top: 5px;
     }
-
-    .wcpi-approach-card i {
-      font-size: 40px;
-      color: var(--wcpi-pink);
-      margin-bottom: 16px;
-      display: block;
+    .initiative-content h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #c2185b;
     }
-
-    .wcpi-approach-card h3 {
-      font-size: 1.375rem;
-      color: var(--wcpi-pink);
-      margin-bottom: 12px;
-    }
-
-    .wcpi-approach-card p {
+    .initiative-content p {
+      margin-top: 10px;
       font-size: 1rem;
-      color: var(--wcpi-gray-600);
-      margin-bottom: 12px;
       line-height: 1.6;
     }
-
-    .wcpi-approach-card a {
-      font-size: 1rem;
-      color: var(--wcpi-pink);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .wcpi-approach-button {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 12px 24px;
-      background-color: var(--wcpi-pink);
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-    }
-
-    .wcpi-approach-button:hover {
-      background-color: #be185d;
+    @media (max-width: 768px) {
+      .initiative-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="initiatives-container">
+    <h2 class="initiatives-title">Program Initiatives</h2>
 
-  <section class="wcpi-approach-section">
-    <h2 class="wcpi-approach-title">Our Integrated Approach</h2>
-    <p class="wcpi-approach-description">
-      At WCPI, our work is built on four pillars that work together to reduce cancer-related deaths among women in Nigeria—
-      research that informs, education that empowers, screening that detects early, and training that strengthens the health system.
-    </p>
-
-    <div class="wcpi-approach-grid">
-
-      <div class="wcpi-approach-card">
-        <i class="fas fa-flask"></i>
+    <div class="initiative-card">
+      <i class="fas fa-flask initiative-icon"></i>
+      <div class="initiative-content">
         <h3>Scientific Research</h3>
-        <p>We lead community-based research to understand how women perceive cancer, access care, and respond to screening.</p>
-        <a href="#">learn more →</a>
+        <p>We lead community-based research to understand how women perceive cancer, access care, and respond to screening. Our findings shape every program we run. We translate global cancer data into clear, actionable information Nigerian women can use—because knowledge saves lives.</p>
       </div>
-
-      <div class="wcpi-approach-card">
-        <i class="fas fa-book-open"></i>
-        <h3>Health Education</h3>
-        <p>Most Nigerian women are aware of breast and cervical cancer, but only a few understand their risk or options.</p>
-        <a href="#">learn more →</a>
-      </div>
-
-      <div class="wcpi-approach-card">
-        <i class="fas fa-stethoscope"></i>
-        <h3>Cancer Screening</h3>
-        <p>For too many Nigerian women, cancer screening is out of reach—blocked by high costs or poor infrastructure.</p>
-        <a href="#">learn more →</a>
-      </div>
-
-      <div class="wcpi-approach-card">
-        <i class="fas fa-hands-helping"></i>
-        <h3>Capacity Development</h3>
-        <p>WCPI strengthens the health system by training professionals and empowering patients across Nigeria.</p>
-        <a href="#">learn more →</a>
-      </div>
-
     </div>
 
-    <a href="#" class="wcpi-approach-button">Learn More</a>
-  </section>
+    <div class="initiative-card">
+      <i class="fas fa-user-nurse initiative-icon"></i>
+      <div class="initiative-content">
+        <h3>Capacity Development</h3>
+        <p>In partnership with Project ECHO and other institutions, we train healthcare workers in early detection. Our field training, webinars, and seminars ensure professionals are equipped to fight cancer, ultimately reducing mortality rates through preventive education and treatment access.</p>
+      </div>
+    </div>
 
+    <div class="initiative-card">
+      <i class="fas fa-book-open initiative-icon"></i>
+      <div class="initiative-content">
+        <h3>Health Education</h3>
+        <p>WCPI educates women on cancer prevention and early detection. We simplify complex information and deliver it in ways that are accessible and relevant—beginning in Remo North, Ogun State, and now reaching communities across Nigeria.</p>
+      </div>
+    </div>
+
+    <div class="initiative-card">
+      <i class="fas fa-stethoscope initiative-icon"></i>
+      <div class="initiative-content">
+        <h3>Cancer Screening</h3>
+        <p>We offer free mammograms and cervical screenings during outreach programs. Every woman screened receives comprehensive care including consultations, multivitamins, and referrals if needed—empowering them to act early and protect their health.</p>
+      </div>
+    </div>
+
+    <div class="initiative-card">
+      <i class="fas fa-syringe initiative-icon"></i>
+      <div class="initiative-content">
+        <h3>HPV Vaccination Advocacy</h3>
+        <p>To reduce cervical cancer, we advocate for full HPV vaccine coverage through school-based programs, local campaigns, and free vaccine drives. We aim to protect every Nigerian girl, no matter her background or location.</p>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
