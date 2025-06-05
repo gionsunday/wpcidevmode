@@ -1,6 +1,9 @@
 window.addEventListener("load", () => {
   const imgHolder01 = document.querySelector("#imgholder1");
+  imgHolder01.style.transition = "1s";
+
   const imgHolder02 = document.querySelector("#imgholder2");
+  imgHolder02.style.transition = "1s";
 
   // const img00 = "https://wcpinitiative.onrender.com/img/events/g0.jpg";
   // const img01 = "https://wcpinitiative.onrender.com/img/events/g1.jpg";
@@ -37,18 +40,22 @@ window.addEventListener("load", () => {
   // const img32 = "https://wcpinitiative.onrender.com/img/events/g32.jpg";
   // const img33 = "https://wcpinitiative.onrender.com/img/events/g33.jpg";
 
-
-   const img00 = "../img/PIC/bg1.png";
+  const img00 = "../img/PIC/bg1.png";
   const img01 = "../img/PIC/g11.jpeg";
-  const img02 = ".../img/PIC/g12.jpeg";
+  const img02 = "../img/PIC/g12.jpeg";
   const img03 = "../img/PIC/g9.jpg";
   const img04 = "../img/PIC/g14.jpeg";
-  const img05 = "https://wcpinitiative.onrender.com/img/events/g5.jpg";
-  const img06 = "https://wcpinitiative.onrender.com/img/events/g6.jpg";
-  const img07 = "https://wcpinitiative.onrender.com/img/events/g7.jpg";
-  const img08 = "https://wcpinitiative.onrender.com/img/events/g8.jpg";
+  const img05 = "../img/PIC/6.jpg";
+  const img06 = "../img/PIC/8.jpg";
+  const img07 = "../img/PIC/g20.jpg";
+  const img08 = "../img/PIC/9.jpg";
   const img09 = "../img/PIC/g29.jpg";
   const img10 = "../img/PIC/g15.jpg";
+  const img11 = "../img/PIC/g33.jpg";
+  const img12 = "../img/PIC/g21.jpg";
+  const img13 = "../img/PIC/g24.jpg";
+  const img14 = "../img/PIC/3.jpg";
+  const img15 = "../img/PIC/g25.jpg";
 
   const imgageArrays01 = [
     img00,
@@ -56,25 +63,30 @@ window.addEventListener("load", () => {
     img02,
     img03,
     img04,
-    
-    
+    img11,
+    img13,
+    img14,
   ];
   const imgageArrays02 = [
-img05,
+    img05,
     img06,
     img07,
     img08,
     img09,
     img10,
+    img12,
+    img15,
   ];
 
   let randomNumber1 = 0;
-  let randomNumber2 = 0;
-  setInterval(() => {
-    randomNumber1 = Math.floor(Math.random() * 10);
-    randomNumber2 = Math.floor(Math.random() * 10);
+  let randomNumber2 = 1;
 
-    //   console.log(randomNumber1, randomNumber2)
+  imgHolder01.src = img14 || imgageArrays01[randomNumber1];
+  imgHolder02.src = img10 || imgageArrays02[randomNumber2];
+  setInterval(() => {
+    randomNumber1 = Math.floor(Math.random() * 5);
+    randomNumber2 = Math.floor(Math.random() * 5);
+    console.log(randomNumber1, randomNumber2);
 
     imgHolder01.src = imgageArrays01[randomNumber1];
     imgHolder02.src = imgageArrays02[randomNumber2];
