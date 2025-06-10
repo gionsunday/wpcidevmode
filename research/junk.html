@@ -1,178 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Partnership - WCPI</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision Roadmap</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #333;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      background-color: #f9f9f9;
     }
 
-    header {
-      background-color: #c56cf0;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    .container {
+    .vision-section-vbd123 {
+      padding: 3rem 1.5rem;
       max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px;
+      margin: auto;
     }
 
-    section {
-      margin-bottom: 40px;
+    .vision-section-vbd123 h2 {
+      font-size: 2rem;
+      color: #c30052;
+      margin-bottom: 1rem;
     }
 
-    section img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-top: 15px;
+    .vision-intro-vbd123 {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
     }
 
-    h2 {
-      color: #c56cf0;
-      margin-top: 0;
+    .vision-phase-title-vbd123 {
+      font-size: 1.4rem;
+      margin: 2rem 0 1rem;
+      font-weight: 600;
+      color: #333;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      margin: 8px 0;
-      padding-left: 25px;
+    .roadmap-container-vbd123 {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
       position: relative;
     }
 
-    ul li::before {
-      content: "\f00c";
-      font-family: 'Font Awesome 6 Free';
-      font-weight: 900;
-      color: #e754d8;
-      position: absolute;
-      left: 0;
+    @media (min-width: 768px) {
+      .roadmap-container-vbd123 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
     }
 
-    .highlight {
-      background-color: #fce8f9;
-      border-left: 5px solid #c56cf0;
-      padding: 15px;
-      border-radius: 6px;
-      margin-top: 15px;
-    }
-
-    footer {
-      background-color: #f6f1fb;
+    .roadmap-item-vbd123 {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      position: relative;
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
+    }
+
+    .roadmap-item-vbd123:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -1rem;
+      width: 2rem;
+      height: 2rem;
+      background: #c30052;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    .roadmap-item-vbd123:first-child:before {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .roadmap-item-vbd123:before {
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1rem;
+        height: 1rem;
+        width: 1rem;
+      }
+
+      .roadmap-item-vbd123:first-child:before {
+        display: block;
+        content: '';
+        margin-top: -1rem;
+      }
+    }
+
+    .roadmap-item-vbd123 h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .roadmap-item-vbd123 p {
+      font-size: 0.9rem;
+      line-height: 1.5;
       color: #555;
     }
 
-    a {
-      color: #c56cf0;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    .roadmap-item-vbd123 i {
+      font-size: 2rem;
+      color: #c30052;
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
-
 <body>
 
-  <header>
-    <h1><i class="fa-solid fa-handshake"></i> Our Partnerships</h1>
-  </header>
+  <section class="vision-section-vbd123">
+    <h2><i class="fas fa-lightbulb"></i> A Vision Built on Data</h2>
+    <p class="vision-intro-vbd123">
+      Our mobile screening model isn’t just a service—it’s a research-backed strategy designed to scale. 
+      What we’ve learned has confirmed that if we want to reach more Nigerian women, especially those in rural 
+      or underserved areas, we must stay mobile, community-rooted, and data-driven.
+    </p>
+    <p class="vision-intro-vbd123">And this is only the beginning.</p>
 
-  <div class="container">
-
-    <section>
-      <h2>Collaborating for Impact: Strengthening Our Reach</h2>
-      <p>
-        Over the years, WCPI has built strong partnerships with government agencies, healthcare providers, and
-        organizations that share our mission of reducing the burden of cancer on women.
-        These collaborations have been instrumental in our outreach efforts, expanding our reach, and making a tangible
-        difference in the lives of many Nigerian women.
-      </p>
-      <img src="https://via.placeholder.com/1000x300?text=Collaboration+in+Action" alt="Collaboration in Action">
-    </section>
-
-    <section>
-      <h2>Trusted Partners</h2>
-      <p>We are proud to have worked with esteemed institutions such as:</p>
-      <ul>
-        <li>National Institute for Cancer Research and Treatment (NICRAT)</li>
-        <li>Clinton Health Access Initiative (CHAI)</li>
-        <li>Lagos State Ministry of Health</li>
-        <li>Lagos University Teaching Hospital (LUTH)</li>
-        <li>Breast Imaging Society of Nigeria</li>
-        <li>Faith-based organizations and other NGOs</li>
-      </ul>
-      <img src="https://via.placeholder.com/1000x250?text=Partners+and+Events" alt="Partners and Events">
-    </section>
-
-    <section class="highlight">
-      <p>
-        Our partnership with Lagos University Teaching Hospital and other academic centers ensures that women who need
-        treatment are referred to specialized cancer care providers.
-        We also work alongside CHAI to ensure cost-effective, life-saving treatments are accessible.
-      </p>
-    </section>
-
-    <section>
-      <h2>Mobile Screening Units: Taking Services to the People</h2>
-      <p>
-        WCPI’s mobile mammography unit has become a critical part of our outreach. In partnership with diagnostic
-        centers,
-        we've expanded access to screenings by taking state-of-the-art diagnostic equipment directly to underserved
-        communities.
-        Our mobile units have reached over <strong>7,000 women</strong> and we aim to scale this across all six
-        geopolitical zones in Nigeria.
-      </p>
-      <img src="https://via.placeholder.com/1000x300?text=Mobile+Screening+Unit" alt="Mobile Screening Unit">
-    </section>
-
-    <section class="highlight">
-      <h2>A Call for Future Partnerships</h2>
-      <p>
-        As we continue to grow, WCPI remains open to collaborations that align with our mission. Whether through
-        funding,
-        knowledge sharing, or logistical support—we welcome all forms of partnership.
-      </p>
-      <p>
-        Together with our trusted partners, we can make a significant impact in the fight against cancer.
-      </p>
-      <p>
-        <strong><i class="fa-solid fa-envelope"></i> For partnership inquiries, <a href="contact.html">contact us
-            today</a>.</strong>
-      </p>
-    </section>
-
-  </div>
-
-  <footer>
-    &copy; 2025 Women Cancer Prevention Initiative (WCPI). All rights reserved.
-  </footer>
+    <div class="vision-phase-title-vbd123">
+      <i class="fas fa-road"></i> We are now moving toward the next phase of our research journey:
+    </div>
+    <div class="roadmap-container-vbd123">
+      <div class="roadmap-item-vbd123">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Geopolitical Zones</h3>
+        <p>Expand our mobile screening program to all six geopolitical zones of Nigeria.</p>
+      </div>
+      <div class="roadmap-item-vbd123">
+        <i class="fas fa-chart-line"></i>
+        <h3>Data Collection</h3>
+        <p>Scale up data collection to reach 70,000–100,000 women across the country.</p>
+      </div>
+      <div class="roadmap-item-vbd123">
+        <i class="fas fa-search"></i>
+        <h3>Longitudinal Study</h3>
+        <p>Launch a longitudinal study to track sequential mammograms and develop AI models for breast cancer risk.</p>
+      </div>
+      <div class="roadmap-item-vbd123">
+        <i class="fas fa-university"></i>
+        <h3>Academic Partnerships</h3>
+        <p>Partner with U.S. academic institutions to train AI models using localized data.</p>
+      </div>
+      <div class="roadmap-item-vbd123">
+        <i class="fas fa-handshake"></i>
+        <h3>National Plan</h3>
+        <p>Collaborate with the Nigerian Government to create a national implementation plan.</p>
+      </div>
+    </div>
+  </section>
 
 </body>
-
 </html>
