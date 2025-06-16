@@ -41,8 +41,8 @@ window.addEventListener("load", () => {
   // const img33 = "https://wcpinitiative.onrender.com/img/events/g33.jpg";
 
   const img00 = "../img/PIC/bg1.png";
-  const img01 = "../img/PIC/g11.jpeg";
-  const img02 = "../img/PIC/g12.jpeg";
+  const img01 = "../img/PIC/g11.jpg";
+  const img02 = "../img/PIC/g12.jpg";
   const img03 = "../img/PIC/g99.jpg";
   const img04 = "../img/PIC/g14.jpeg";
   const img05 = "../img/PIC/6.jpg";
@@ -56,7 +56,7 @@ window.addEventListener("load", () => {
   const img13 = "../img/PIC/g24.jpg";
   const img14 = "../img/PIC/3.jpg";
   const img15 = "../img/PIC/g25.jpg";
-  
+
   const imgageArrays01 = [
     img00,
     img01,
@@ -84,8 +84,8 @@ window.addEventListener("load", () => {
   imgHolder01.src = img14 || imgageArrays01[randomNumber1];
   imgHolder02.src = img10 || imgageArrays02[randomNumber2];
   setInterval(() => {
-    randomNumber1 = Math.floor(Math.random() * 5);
-    randomNumber2 = Math.floor(Math.random() * 5);
+    randomNumber1 = Math.floor(Math.random() * 8);
+    randomNumber2 = Math.floor(Math.random() * 8);
     // console.log(randomNumber1, randomNumber2);
 
     imgHolder01.src = imgageArrays01[randomNumber1];
