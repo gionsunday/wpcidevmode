@@ -112,7 +112,7 @@ function incrementAndReset() {
   if (count > urlLength-1) {
     count = 0;
   }
-  console.log(urls[count]);
+  // console.log(urls[count]);
    $(".hero-sub-container").css({
     "background-image": `url(${urls[count]})`,
     "background-size": "cover",

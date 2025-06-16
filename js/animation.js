@@ -86,7 +86,7 @@ window.addEventListener("load", () => {
   setInterval(() => {
     randomNumber1 = Math.floor(Math.random() * 5);
     randomNumber2 = Math.floor(Math.random() * 5);
-    console.log(randomNumber1, randomNumber2);
+    // console.log(randomNumber1, randomNumber2);
 
     imgHolder01.src = imgageArrays01[randomNumber1];
     imgHolder02.src = imgageArrays02[randomNumber2];
