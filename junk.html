@@ -1,142 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Impact by the Numbers</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <title>Tree Flow with Animated Arrows</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background: #f9f9f9;
-      color: #333;
-    }
-
-    .impact-wrapper {
+      padding: 3rem;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      padding: 60px 20px;
     }
 
-    .impact-section {
-      width: 50%;
-      max-width: 600px;
+    .tree-container-t34x7 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
     }
 
-    .impact-section h2 {
-      text-align: center;
-      font-size: 2.5rem;
-      color: #c2185b;
-      margin-bottom: 20px;
-    }
-
-    .impact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-      margin-top: 40px;
-    }
-
-    .impact-card {
+    .card-t34x7 {
       background: #fff;
+      border-left: 5px solid #f91d6c;
       border-radius: 12px;
-      padding: 30px 25px;
+      padding: 1.5rem;
+      width: 300px;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      z-index: 1;
     }
 
-    .impact-card:hover {
-      transform: translateY(-5px);
+    .center-card-t34x7 {
+      border-left: 5px solid #f91d6c;
+      border-right: 5px solid #f91d6c;
     }
 
-    .impact-icon {
-      font-size: 2.5rem;
-      color: #c2185b;
-      margin-bottom: 15px;
-    }
-
-    .impact-number {
+    .icon-t34x7 {
       font-size: 2rem;
+      color: #f91d6c;
+      margin-bottom: 0.5rem;
+    }
+
+    .number-t34x7 {
       font-weight: bold;
-      color: #111;
+      color: #f91d6c;
+      font-size: 1.2rem;
     }
 
-    .impact-description {
-      font-size: 1rem;
-      color: #555;
-      margin-top: 10px;
-      line-height: 1.5;
+    .bottom-row-t34x7 {
+      display: flex;
+      gap: 4rem;
+      margin-top: 60px;
     }
 
-    @media (max-width: 900px) {
-      .impact-wrapper {
+    .arrow-svg-t34x7 {
+      position: absolute;
+      top: 150px;
+      width: 100%;
+      height: 120px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    line.t34x7-line {
+      stroke-dasharray: 200;
+      stroke-dashoffset: 200;
+      animation: draw-t34x7 1.5s ease-out forwards;
+    }
+
+    @keyframes draw-t34x7 {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .tooltip-text-t34x7 {
+      position: absolute;
+      top: 130px;
+      font-size: 0.8rem;
+      color: #666;
+      background: #fff;
+      padding: 2px 6px;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .tooltip-left-t34x7 {
+      left: 22%;
+    }
+
+    .tooltip-right-t34x7 {
+      right: 22%;
+    }
+
+    @media (max-width: 768px) {
+      .bottom-row-t34x7 {
         flex-direction: column;
         align-items: center;
       }
 
-      .impact-section {
-        width: 100%;
-      }
-
-      .impact-section h2 {
-        font-size: 2rem;
+      .arrow-svg-t34x7,
+      .tooltip-text-t34x7 {
+        display: none;
       }
     }
   </style>
 </head>
+
 <body>
 
-  <div class="impact-wrapper">
-    <section class="impact-section">
-      <h2>Impact by the Numbers</h2>
-      <div class="impact-grid">
+  <div class="tree-container-t34x7">
+    <!-- Top Card -->
+    <div class="card-t34x7 center-card-t34x7">
+      <div class="icon-t34x7"><i class="fas fa-users"></i></div>
+      <div class="number-t34x7">7,000+ Women Reached</div>
+      <p>Through community screening outreaches</p>
+    </div>
 
-        <div class="impact-card">
-          <div class="impact-icon"><i class="fas fa-users"></i></div>
-          <div class="impact-number">7,000+</div>
-          <div class="impact-description">
-            Women reached through national outreach events—urban and rural communities alike.
-          </div>
-        </div>
+    <!-- Tooltip Labels -->
+    <!-- <div class="tooltip-text-t34x7 tooltip-left-t34x7">Contributes to total</div>
+    <div class="tooltip-text-t34x7 tooltip-right-t34x7">Contributes to total</div> -->
 
-        <div class="impact-card">
-          <div class="impact-icon"><i class="fas fa-file-medical-alt"></i></div>
-          <div class="impact-number">3,776</div>
-          <div class="impact-description">
-            Participants enrolled in our pilot study (concluded Dec 2024), forming the roll-out base.
-          </div>
-        </div>
+    <!-- Arrow SVG with markers -->
+    <svg class="arrow-svg-t34x7">
+      <defs>
+        <marker id="arrowhead-t34x7" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#f91d6c" />
+        </marker>
+      </defs>
+      <!-- Left Line -->
+      <line class="t34x7-line" x1="50%" y1="0" x2="30%" y2="100" stroke="#f91d6c" stroke-width="2"
+        marker-end="url(#arrowhead-t34x7)" />
+      <!-- Right Line -->
+      <line class="t34x7-line" x1="50%" y1="0" x2="70%" y2="100" stroke="#f91d6c" stroke-width="2"
+        marker-end="url(#arrowhead-t34x7)" />
+    </svg>
 
-        <div class="impact-card">
-          <div class="impact-icon"><i class="fas fa-truck-medical"></i></div>
-          <div class="impact-number">2,836</div>
-          <div class="impact-description">
-            Screenings completed via our custom mobile mammography unit—zero appointment hassles.
-          </div>
-        </div>
-
-        <div class="impact-card">
-          <div class="impact-icon"><i class="fas fa-calendar-check"></i></div>
-          <div class="impact-number">~700/month</div>
-          <div class="impact-description">
-            Consistent screening rate since May 2024—showing strong demand and community trust.
-          </div>
-        </div>
-
-        <div class="impact-card">
-          <div class="impact-icon"><i class="fas fa-hands-helping"></i></div>
-          <div class="impact-number">3,000+</div>
-          <div class="impact-description">
-            Women provided with follow-up consultations, nutritional support, and medical referrals.
-          </div>
-        </div>
-
+    <!-- Bottom Cards -->
+    <div class="bottom-row-t34x7">
+      <div class="card-t34x7">
+        <div class="icon-t34x7"><i class="fas fa-ambulance"></i></div>
+        <div class="number-t34x7">3,766 Women Screened</div>
+        <p>in our completed pilot mammography study</p>
       </div>
-    </section>
+
+      <div class="card-t34x7">
+        <div class="icon-t34x7"><i class="fas fa-calendar-check"></i></div>
+        <div class="number-t34x7">3,500 Women Screened</div>
+        <p>and <strong>72 treated</strong> with thermal coagulation for pre-cancer</p>
+      </div>
+    </div>
   </div>
 
 </body>
+
 </html>
