@@ -86,7 +86,7 @@
 .popup-container button {
     width: 100%;
     padding: 10px;
-    background-color: #f1368d;
+    background-color: #db2777;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -2554,7 +2554,7 @@ div.card p {
 
 .card-t34x7 {
     background: #fff;
-    border-left: 5px solid #f91d6c;
+    border-left: 5px solid #db2777;
     border-radius: 12px;
     padding: 1.5rem;
     width: 450px;
@@ -2564,24 +2564,24 @@ div.card p {
 }
 
 .card-left {
-    border-right: 5px solid #f91d6c !important;
+    border-right: 5px solid #db2777 !important;
     border-left: none !important;
 }
 
 .center-card-t34x7 {
-    border-left: 5px solid #f91d6c;
-    border-right: 5px solid #f91d6c;
+    border-left: 5px solid #db2777;
+    border-right: 5px solid #db2777;
 }
 
 .icon-t34x7 {
     font-size: 2rem;
-    color: #f91d6c;
+    color: #db2777;
     margin-bottom: 0.5rem;
 }
 
 .number-t34x7 {
     font-weight: bold;
-    color: #f91d6c;
+    color: #db2777;
     font-size: 1.2rem;
 }
 
@@ -2642,20 +2642,24 @@ line.t34x7-line {
     .tooltip-text-t34x7 {
         display: none;
     }
+
     .card-t34x7 {
-    background: #fff;
-    border-left: 5px solid #f91d6c;
-    border-radius: 12px;
-    padding: 1.5rem;
-    width: 350px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    z-index: 1;
+        background: #fff;
+        border-left: 5px solid #db2777;
+        border-radius: 12px;
+        padding: 1.5rem;
+        width: 350px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+    }
 }
-}
-.card-t34x7 p, .wcpi-approach-card p{
+
+.card-t34x7 p,
+.wcpi-approach-card p {
     font-size: 1.125rem !important;
-} 
+}
+
 .col-lg-6 p {
     font-size: 1.125rem !important;
 }

@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
   const img00 = "../img/PIC/bg1.png";
   const img01 = "../img/PIC/g11.jpeg";
   const img02 = "../img/PIC/g12.jpeg";
-  const img03 = "../img/PIC/g9.jpg";
+  const img03 = "../img/PIC/g99.jpg";
   const img04 = "../img/PIC/g14.jpeg";
   const img05 = "../img/PIC/6.jpg";
   const img06 = "../img/PIC/8.jpg";
@@ -56,7 +56,7 @@ window.addEventListener("load", () => {
   const img13 = "../img/PIC/g24.jpg";
   const img14 = "../img/PIC/3.jpg";
   const img15 = "../img/PIC/g25.jpg";
-
+  
   const imgageArrays01 = [
     img00,
     img01,
