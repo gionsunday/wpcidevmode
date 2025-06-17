@@ -43,8 +43,8 @@ window.addEventListener("load", () => {
   const img00 = "../img/PIC/bg1.png";
   const img01 = "../img/PIC/g11.jpg";
   const img02 = "../img/PIC/g12.jpg";
-  const img03 = "../img/PIC/g99.jpg";
-  const img04 = "../img/PIC/g14.jpeg";
+  const img03 = "../img/PIC/g9.jpg";
+  const img04 = "../img/PIC/g14.jpg";
   const img05 = "../img/PIC/6.jpg";
   const img06 = "../img/PIC/8.jpg";
   const img07 = "../img/PIC/g20.jpg";
@@ -84,16 +84,42 @@ window.addEventListener("load", () => {
   imgHolder01.src = img14 || imgageArrays01[randomNumber1];
   imgHolder02.src = img10 || imgageArrays02[randomNumber2];
   setInterval(() => {
-    randomNumber1 = Math.floor(Math.random() * 8);
-    randomNumber2 = Math.floor(Math.random() * 8);
+    randomNumber1 = Math.floor(Math.random() * 7);
+    randomNumber2 = Math.floor(Math.random() * 7);
     // console.log(randomNumber1, randomNumber2);
 
-    imgHolder01.src = imgageArrays01[randomNumber1];
-    imgHolder02.src = imgageArrays02[randomNumber2];
+    // imgHolder01.src = imgageArrays01[randomNumber1];
+    // imgHolder02.src = imgageArrays02[randomNumber2];
 
     //   console.log(imgageArrays[randomNumber1], imgageArrays[randomNumber2])
   }, 3000);
+
+  let numbers = shuffle([...Array(8).keys()]); // [0, 1, ..., 8]
+  let index = 0;
+
+  setInterval(() => {
+    if (index >= numbers.length) {
+      numbers = shuffle([...Array(8).keys()]);
+      index = 0;
+    }
+
+    const randomNum1 = numbers[index];
+    const randomNum2 = numbers[index];
+
+    imgHolder01.src = imgageArrays01[randomNum1];
+    imgHolder02.src = imgageArrays02[randomNum2];
+    console.log(randomNum1, randomNum2);
+    index++;
+  }, 3000);
 });
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
 /**
  *   const imgageArrays01 = [
