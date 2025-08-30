@@ -2663,3 +2663,63 @@ line.t34x7-line {
 .col-lg-6 p {
     font-size: 1.125rem !important;
 }
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+@media screen and (max-width:990px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .fourcon h2 {
+        font-size: 26px;
+    }
+
+    .fourcon h2 span {
+        border-radius: 5px;
+        /* margin-top: 2px; */
+        text-shadow: 0px 2px .1px rgb(0, 0, 0);
+        background-color: whitesmoke;
+        padding: 1px 8px 1px 8px;
+    }
+
+    .item-container img {
+    width: 400px;
+    height: 100%;
+}
+
+.wcpi-approach-grid {
+    display: grid
+;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    padding: 0px 0px 0px 0px;
+}
+.wcpi-know-section {
+    max-width: 100%; 
+    margin: 0 auto;
+    padding: 70px 20px;
+    text-align: center;
+    color: var(--wcpi-color-gray);
+}
+}
+
+
+
+.fourcon h2 span {
+    border-radius: 5px;
+
+    text-shadow: 0px 2px .1px rgb(0, 0, 0);
+    background-color: whitesmoke;
+    padding: 1px 10px 1px 10px;
+}

@@ -108,7 +108,7 @@ window.addEventListener("load", () => {
 
     imgHolder01.src = imgageArrays01[randomNum1];
     imgHolder02.src = imgageArrays02[randomNum2];
-    console.log(randomNum1, randomNum2);
+    // console.log(randomNum1, randomNum2);
     index++;
   }, 3000);
 });

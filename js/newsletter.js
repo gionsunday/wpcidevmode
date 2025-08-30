@@ -23,7 +23,8 @@ window.addEventListener("load", () => {
         });
 
         newsletterBtn.textContent = "Subscribed!";
-        console.log(data);
+          newsletterBtn.textContent = "Thank you!";
+        // console.log(data);
         emailInput.value = "";
         nameInput.value ="" 
         newserror.textContent = data.data.maessage
