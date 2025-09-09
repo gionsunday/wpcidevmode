@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -184,8 +184,17 @@
                     </div>
                 </header> -->
                 <div class="fourcon">
+                    <div class="flyerdiv" style="">
+                    <img id="flyer" src="./img/p1.jpeg" style="" />
+                    </div>
 
-                    <h2 class="text-white text-center mobile">
+                    <div class="regdiv" style="">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7a1wtfAAGBcK886ZGXT6eOpo3CqHRdXZfkOHHqAesmDCW_w/viewform?usp=header" >
+                            <button class="regbtn"> Register Here</button>
+                        </a>
+                    </div>
+
+                    <!-- <h2 class="text-white text-center mobile">
                         Screen Her Today,
                         <br>
                         <span>Save
@@ -211,7 +220,7 @@
                     </div>
                     <div class="con-item con2">
                         <img src="img/PIC/g15.jpg" alt="">
-                    </div>
+                    </div> -->
                     <!-- <div class="con-item con3">
 
                     </div>
@@ -1175,6 +1184,28 @@
     <!-- Footer End -->
 
 
+<script>
+  const images = ["./img/p1.jpeg", "./img/p2.jpeg"];
+  let index = 0;
+  const flyer = document.getElementById("flyer");
+
+  function changeImage() {
+    // Add slide-in class (move + fade out)
+    flyer.classList.add("slide-in");
+    // flyer.classList.add("slide-out");
+
+    // Wait for transition, then change src
+    setTimeout(() => {
+      index = (index + 1) % images.length;
+      flyer.src = images[index];
+
+      // Remove slide-in to trigger transition back (fade/slide in)
+      flyer.classList.remove("slide-in");
+    }, 800); // match transition duration
+  }
+
+  setInterval(changeImage, 8000); // change every 3s
+</script>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i

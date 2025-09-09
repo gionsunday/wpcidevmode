@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
       try {
         const data = await axios.post("https://wcpinitiative.onrender.com/wcpi/api/newsletter", {
           email: emailInput.value,
-          name: nameInput.value
+          name: nameInput.value || "there"
         });
 
         newsletterBtn.textContent = "Subscribed!";

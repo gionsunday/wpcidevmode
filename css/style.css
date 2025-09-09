@@ -865,6 +865,7 @@ a {
 .fourcon {
     height: 450px;
     background-color: #1b2c5180;
+    
     width: 80%;
     margin: auto;
     border-radius: 10px;
@@ -876,6 +877,17 @@ a {
 
 }
 
+#flyer{
+    width:100%; height:420px
+}
+.flyerdiv{
+     width:420px;
+     height:420px;
+     background-position:center center;
+     background-repeat:no-repeat;
+     background-size: contain;
+    /* background-image:url("../img/p1.jpeg") */
+}
 .con-item {
     width: 45%;
     height: 200px;
@@ -2727,3 +2739,59 @@ line.t34x7-line {
     background-color: whitesmoke;
     padding: 1px 10px 1px 10px;
 }
+.regdiv{
+    position:absolute;
+    top:50%
+}
+
+.regdiv .regbtn {
+    border: 2px solid #db2777;
+    padding: 8px 16px;
+    font-size: 20px;
+    font-weight: 700;
+    
+        text-shadow: 4px 4px 36px solid black;
+    border-radius: 5px;
+    /* background: #db2777; */
+    color: white;
+    cursor: pointer;
+    animation: pulse 4s infinite ease-in-out;
+}
+
+/* Pulse animation with background/text swap */
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+        background-color: transparent;
+        color: white;
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: #ffffff93;
+        color: #db2777;
+        text-shadow: 4px 4px 36px solid black;
+    }
+     100% {
+        transform: scale(1);
+        background-color: #db27787a;
+        
+        text-shadow: 4px 4px 36px solid black;
+        color: white;
+    }
+}
+
+ #flyer {
+    /* width: 400px; adjust size as needed */
+    /* height: auto; */
+    display: block;
+    /* margin: 20px auto; */
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    opacity: 1;
+  }
+
+  /* Slide-in effect */
+  .slide-in {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+    
