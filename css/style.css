@@ -863,9 +863,8 @@ a {
 }
 
 .fourcon {
-    height: 450px;
+    height: 480px;
     background-color: #1b2c5180;
-    
     width: 80%;
     margin: auto;
     border-radius: 10px;
@@ -877,17 +876,20 @@ a {
 
 }
 
-#flyer{
-    width:100%; height:420px
+#flyer {
+    width: 100%;
+    height: 420px
 }
-.flyerdiv{
-     width:420px;
-     height:420px;
-     background-position:center center;
-     background-repeat:no-repeat;
-     background-size: contain;
+
+.flyerdiv {
+    width: 420px;
+    height: 420px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
     /* background-image:url("../img/p1.jpeg") */
 }
+
 .con-item {
     width: 45%;
     height: 200px;
@@ -2706,28 +2708,28 @@ line.t34x7-line {
     }
 
     .item-container img {
-    width: 400px;
-    height: 100%;
-}
+        width: 400px;
+        height: 100%;
+    }
 
-.wcpi-approach-grid {
-    display: grid
-;
-    gap: 30px;
-    grid-template-columns: 1fr;
-    padding: 0px 0px 0px 0px;
-}
-.wcpi-know-section {
-    max-width: 100%; 
-    margin: 0 auto;
-    padding: 70px 20px;
-    text-align: center;
-    color: var(--wcpi-color-gray);
-}
+    .wcpi-approach-grid {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+        padding: 0px 0px 0px 0px;
+    }
 
-.about-img .w-75 {
-    width: 100% !important;
-}
+    .wcpi-know-section {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 70px 20px;
+        text-align: center;
+        color: var(--wcpi-color-gray);
+    }
+
+    .about-img .w-75 {
+        width: 100% !important;
+    }
 }
 
 
@@ -2739,9 +2741,10 @@ line.t34x7-line {
     background-color: whitesmoke;
     padding: 1px 10px 1px 10px;
 }
-.regdiv{
-    position:absolute;
-    top:50%
+
+.regdiv {
+    position: absolute;
+    top: 50%
 }
 
 .regdiv .regbtn {
@@ -2749,8 +2752,8 @@ line.t34x7-line {
     padding: 8px 16px;
     font-size: 20px;
     font-weight: 700;
-    
-        text-shadow: 4px 4px 36px solid black;
+
+    text-shadow: 4px 4px 36px solid black;
     border-radius: 5px;
     /* background: #db2777; */
     color: white;
@@ -2760,38 +2763,205 @@ line.t34x7-line {
 
 /* Pulse animation with background/text swap */
 @keyframes pulse {
-    0%{
+    0% {
         transform: scale(1);
         background-color: transparent;
         color: white;
     }
+
     50% {
         transform: scale(1.1);
         background-color: #ffffff93;
         color: #db2777;
         text-shadow: 4px 4px 36px solid black;
     }
-     100% {
+
+    100% {
         transform: scale(1);
         background-color: #db27787a;
-        
+
         text-shadow: 4px 4px 36px solid black;
         color: white;
     }
 }
 
- #flyer {
+#flyer {
     /* width: 400px; adjust size as needed */
     /* height: auto; */
     display: block;
     /* margin: 20px auto; */
     transition: transform 0.8s ease, opacity 0.8s ease;
     opacity: 1;
-  }
+}
 
-  /* Slide-in effect */
-  .slide-in {
+/* Slide-in effect */
+.slide-in {
     transform: translateX(60px);
     opacity: 0;
-  }
-    
+}
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #db2777, purple);
+    color: white;
+    line-height: 1.6;
+    align-items: center;
+    padding: 50px 8%;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+ 
+    font-family: "Staatliches", Sans-serif;
+    color: white;
+}
+
+.hero-text h2 {
+    margin: 15px 0;
+    font-size: 1.3rem;
+
+    color: #f0d3ff;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    max-width: 500px;
+    color: #e0d9ec;
+}
+
+a{
+    text-decoration: none !important;
+}
+.hero-text a:hover{
+    color: #db2777;
+    background-color: #fff;
+}
+.btn-primarry {
+    background: #e9408c;
+    padding: 12px 22px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Hero Card */
+.hero-card{
+    background: #ffe5f0;
+    color: #333;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.hero-card .highlight {
+    font-size: 2rem;
+    color: #e9408c;
+    margin: 10px 0;
+}
+
+.btn-card {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #e9408c;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* ========================= */
+/* 📱 Mobile Responsiveness */
+/* ========================= */
+@media (max-width: 768px) {
+
+    .flyerdiv {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-image:url("../img/p1.jpeg") */
+}
+
+.section-description {
+    font-size: 1rem;
+    /* text-lg */
+    text-align: center;
+    color: var(--gray-600);
+    max-width: 42rem;
+    /* max-w-2xl = 672px */
+    margin: 1rem auto 3rem;
+}
+    .hero {
+        flex-direction: column;
+        text-align: left;
+        padding: 60px 5%;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.1rem;
+    }
+
+    .hero-text p {
+        max-width: 100%;
+        font-size: 1rem;
+        text-align: left !important;
+    }
+
+
+
+    .btn-primarry {
+        width: 80%;
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    .hero-car {
+        max-width: 100%;
+        margin-top: 25px;
+        padding: 0px !important;
+        margin: auto;
+    }
+
+    .hero-card .highlight {
+        font-size: 1.6rem;
+    }
+
+    .btn-card {
+        width: 100%;
+        padding: px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1rem;
+    }
+
+    .hero-card .highlight {
+        font-size: 1.4rem;
+    }
+}
