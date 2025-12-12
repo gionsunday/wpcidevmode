@@ -2,7 +2,7 @@ window.addEventListener("load", () => {
   const newsletterBtn = document.querySelector("#newsletterbtn");
   const newserror = document.querySelector("#newslettererror")
 
-
+  const newsletterBtn2 = document.querySelector("#newsletterbtn2");
 
  const emailInput = document.querySelector("#newsletteremail");
   const nameInput = document.querySelector("#newslettername");

@@ -1,10 +1,8 @@
 window.addEventListener("load", () => {
-  const newsletterBtn = document.querySelector("#newsletterbtn");
-  const newserror = document.querySelector("#newslettererror")
+  const newsletterBtn = document.querySelector("#newsletterfooterbtn");
+  const newserror = document.querySelector("#newsletterfootererror")
 
-
-
- const emailInput = document.querySelector("#newsletteremail");
+ const emailInput = document.querySelector("#newsletterfooteremail");
   const nameInput = document.querySelector("#newslettername");
 
   newsletterBtn.addEventListener("click", async (e) => {
@@ -47,6 +45,7 @@ window.addEventListener("load", () => {
         console.log(error);
         newserror.textContent= error.response.data.message
         newsletterBtn.textContent = "Subscribe";
+        emailInput.value = "";
 
       }
     }
