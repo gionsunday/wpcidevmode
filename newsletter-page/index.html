@@ -150,8 +150,7 @@
 </style>
 
     <script>
-        const url = "https://drive.google.com/file/d/1NhtDthw6sH0Pxh9L3lkcZWT-uNu_sL_k/view?usp=sharing"; // PDF path
-
+        const url = "https://drive.google.com/uc?export=download&id=1NhtDthw6sH0Pxh9L3lkcZWT-uNu_sL_k"
         const loadingTask = pdfjsLib.getDocument(url);
         loadingTask.promise.then(pdf => {
             pdf.getPage(1).then(page => {
