@@ -353,7 +353,7 @@
             <!-- Top Card -->
             <div class="card-t34x7 center-card-t34x7">
                 <div class="icon-t34x7"><i class="fas fa-users"></i></div>
-                <div class="number-t34x7">7,000+ Women Reached</div>
+                <div class="number-t34x7">9,500+ Women Reached</div>
                 <p>Through community screening outreaches</p>
             </div>
 
@@ -381,7 +381,7 @@
                 <div class="card-t34x7">
                     <div class="icon-t34x7"><i class="fas fa-ambulance"></i></div>
                     <div class="number-t34x7">Breast Cancer Screening</div>
-                    <p> <strong class="highlight"> 3,766 Women</strong> Screened through our completed pilot mammography
+                    <p> <strong class="highlight"> 6,000+ Women</strong> Screened through our completed pilot mammography
                         study to detect early signs of breast cancer
                     </p>
                 </div>
@@ -570,6 +570,28 @@
 
         </section>
     </div>
+
+    <section id="wcpi-impact-video-section" class="wcpi-impact-video-section">
+        <div class="wcpi-impact-container">
+            <h2 class="wcpi-impact-title">Real Stories. Real Impact</h2>
+
+
+
+            <div id="wcpi-impact-video-wrapper" class="wcpi-impact-video-wrapper">
+                <iframe id="wcpi-impact-video-iframe" src="https://www.youtube.com/embed/4jANaIz1cec"
+                    title="WCPI Real Stories Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+        <label class="wcpi-impact-caption">
+            Meet <strong>Mrs Halimat Onimisi</strong>, one of the women who benefited from our
+            mammogram screening during the <strong>October 2025 breast cancer awareness month. </strong>
+        </label>
+    </section>
 
     <!-- Service Start -->
     <!-- <div class="container-xxl py-5" style="background-color: var(--gray-50)">
@@ -1320,8 +1342,31 @@
         }
 
         setInterval(changeImage, 8000); // change every 3s
-    </script>
 
+
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const wcpiImpactVideo = document.getElementById(
+                "wcpi-impact-video-wrapper"
+            );
+
+            if (!wcpiImpactVideo) return;
+
+            const wcpiObserver = new IntersectionObserver(
+                ([entry]) => {
+                    if (entry.isIntersecting) {
+                        wcpiImpactVideo.classList.add("wcpi-impact-visible");
+                        wcpiObserver.unobserve(wcpiImpactVideo);
+                    }
+                },
+                { threshold: 0.3 }
+            );
+
+            wcpiObserver.observe(wcpiImpactVideo);
+        });
+    </script>
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
             class="bi bi-arrow-up"></i></a>
@@ -1351,6 +1396,87 @@
             .mobileHide h1 {
                 font-size: 28px;
                 display: none;
+            }
+        }
+
+        #wcpi-impact-video-section {
+            padding: 80px 20px;
+            background-color: #fafafa;
+        }
+
+        .wcpi-impact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .wcpi-impact-title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #d63384;
+            margin-bottom: 16px;
+        }
+
+        .wcpi-impact-caption {
+            font-size: 1.25rem;
+            color: #4b5563;
+            max-width: 920px;
+            /* margin: 0 auto 400px; */
+            margin: 10px 0px 0px 160px;
+            background-color: #fff;
+            padding: 10px 20px 10px 20px;
+            border-radius: 15px;
+
+            line-height: 1.6;
+        }
+
+
+        .wcpi-impact-video-wrapper {
+            position: relative;
+            padding-top: 56.25%;
+            /* 16:9 */
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            transform: translateY(20px);
+            opacity: 0;
+            transition: transform 0.8s ease, opacity 0.8s ease;
+        }
+
+        .wcpi-impact-video-wrapper iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Visible state */
+        .wcpi-impact-video-wrapper.wcpi-impact-visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .wcpi-impact-title {
+                font-size: 1.9rem;
+            }
+
+            .wcpi-impact-caption {
+                font-size: 1rem;
+            }
+
+            .wcpi-impact-caption {
+                font-size: .8rem;
+                color: #4b5563;
+                max-width: 100%;
+                /* margin: 0 auto 400px; */
+                margin: 0px 0px 0px 0px;
+                background-color: #fff;
+                padding: 10px 20px 10px 20px;
+                border-radius: 15px;
+                line-height: 1.6;
             }
         }
     </style>
